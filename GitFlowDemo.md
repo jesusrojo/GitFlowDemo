@@ -23,4 +23,10 @@ git add --all
 git commit -m "Add GitDemoFlow.md file"
 git push -u origin main
 ```
+## Third commit
+```
+git add --all
+git commit -m "Update GitDemoFlow.md"
+git push -u origin main
+```
 
