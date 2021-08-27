@@ -26,12 +26,12 @@ git checkout -b feature_01
 #### Work in branch feature and save changes in github (in branch feature)
 ```
 git add --all
-git commit -m "Add file and work in feature_01"	
-git push origin feature1		// Push our branch to Github
+git commit -m "Add global-setup.md in feature_01"	
+git push origin feature_01
 ```
 #### Finish branch feature 
 ```
-git checkout develop
+git checkout dev
 git merge feature_01
 ```
 
