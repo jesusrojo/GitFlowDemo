@@ -17,5 +17,10 @@ git remote add origin git@github.com:jesusrojo/GitFlowDemo.git
 git branch -M main
 git push -u origin main
 ```
-## 
+## Second commit
+```
+git add --all
+git commit -m "Add GitDemoFlow.md file"
+git push -u origin main
+```
 
