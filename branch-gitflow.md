@@ -1,5 +1,7 @@
 ## branch-gitflow.md
-
+```
+git branch -a   // LIST ALL BRANCH (local and remote)
+```
 
 #### Clone one branch (dev) from Github
 ```
@@ -18,7 +20,17 @@ git commit -m "Add global-setup.md in jr-feature-index"
 git push origin jr-feature-index
 ```
 #### Look for new changes in dev
+```
+git checkout dev
+git fetch	//important
 
+git diff origin/dev dev
+
+git diff branch1..branch2
+git diff main..branch1 -- README  // DIFFERENCES IN FILE
+git diff --stat --color remotes/origin/dev..origin/dev
+git diff remotes/origin/dev..origin/dev
+```
 
 #### Merge new changes into jr-feature-index
 
