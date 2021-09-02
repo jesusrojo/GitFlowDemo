@@ -16,7 +16,7 @@ git checkout -b jr-feature-index
 #### Work in branch feature & Save changes in github (in branch feature)
 ```
 git add --all
-git commit -m "Add global-setup.md in jr-feature-index"	
+git commit -m "Working in jr-feature-index"	
 git push origin jr-feature-index
 ```
 #### Look for new changes in dev
@@ -33,7 +33,11 @@ git diff remotes/origin/dev..origin/dev
 ```
 
 #### Merge new changes into jr-feature-index
-
+```
+git checkout jr-feature-index
+git merge dev
+```
+###### [UP] Work in branch feature & Save changes in github (in branch feature)
 
 #### Finish branch feature 
 Download dev  and try to merge to see any conflicts
@@ -41,3 +45,4 @@ Download dev  and try to merge to see any conflicts
 git checkout dev
 git merge jr-feature-index
 ```
+#### Createa PullRequest in Github
