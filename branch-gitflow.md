@@ -11,7 +11,7 @@ git clone -b dev --single-branch git@github.com:jesusrojo/GitFlowDemo.git
 git checkout dev
 git checkout -b jr-feature-index
 ```
-#### Work in branch feature and save changes in github (in branch feature)
+#### Work in branch feature & Save changes in github (in branch feature)
 ```
 git add --all
 git commit -m "Add global-setup.md in jr-feature-index"	
