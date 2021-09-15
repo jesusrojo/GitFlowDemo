@@ -1,7 +1,10 @@
 # branch-gitflow.md
+
+## Useful
 ```
-git checkout -b feature-branch  //CREATE AND MOVE TO BRANCH
 git branch -a   // LIST ALL BRANCH (local and remote)
+git checkout -b feature-branch  //CREATE AND MOVE TO BRANCH
+git branch -d feature-branch    // DELETE BRANCH
 ```
 
 ## Clone `dev` branch from Github
@@ -85,7 +88,7 @@ This a local test.
 ```
 git checkout dev
 git diff dev feature-branch 
-git merge `feature-branch`
+git merge feature-branch
 ```
 If everything is OK make a [Pull Request](https://docs.github.com/en/github/collaborating-with-pull-requests) 
 from  `feature-branch` to `dev` in Github. 
