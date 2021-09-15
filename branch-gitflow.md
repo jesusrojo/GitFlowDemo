@@ -1,6 +1,7 @@
 # branch-gitflow.md
 ```
 git checkout -b feature-branch  //CREATE AND MOVE TO BRANCH
+git branch -d feature-branch    // DELETE BRANCH
 git branch -a   // LIST ALL BRANCH (local and remote)
 ```
 
