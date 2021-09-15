@@ -19,30 +19,44 @@ git add --all
 git commit -m "Working in jr-feature"	
 git push origin jr-feature
 ```
-#### Look for new changes in dev
-```
-git checkout dev
-git fetch	//important
 
-git diff origin/dev dev
 
-git diff branch1..branch2
-git diff main..branch1 -- README  // DIFFERENCES IN FILE
-git diff --stat --color remotes/origin/dev..origin/dev
-git diff remotes/origin/dev..origin/dev
-```
 
-#### Merge new changes into jr-feature
+## Update local branch `dev` from Github
+
+1. Update local branch `dev` from Github, see differences and `fetch` & `merge`
+	```
+	git checkout dev
+	git fetch	//important to see the differences
+
+	git diff origin/dev dev
+
+	// q in Bash 
+
+	git merge origin/dev
+	git diff origin/dev dev   // make sure both are same
+	```
+
+2. Update local branch `dev` from Github and `pull`
+	```
+	git checkout dev
+	git  pull
+	```
+
+
+## Merge local branch `dev` with our local `feature-branch`
 ```
-git checkout jr-feature
+git checkout feature-branch
+git diff dev feature-branch
 git merge dev
-```
-###### [UP] Work in branch feature & Save changes in github (in branch feature)
+git diff dev feature-branch  // make sure both are same
 
-#### Finish branch feature 
-Download dev  and try to merge to see any conflicts
 ```
-git checkout dev
-git merge jr-feature
-```
+
+## [UP] Work in `feature-branch` & Save changes in Github (in `feature-branch`)
+
+## Finish `feature-branch`
+Download  a new `dev` or see if ther is any changes (as before). Then try to merge to see any conflicts.
+If everything is ok make a Pull Request from  `feature-branch` to `dev` in Github. Everything should be ok.
+
 #### Createa PullRequest in Github
