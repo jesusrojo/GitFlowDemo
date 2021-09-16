@@ -1,5 +1,32 @@
 # fetch-merge-pull.md
 
+#### Fetch
+
+`git fetch`			&emsp;	Download all but no merge. Download all remote branches and won’t affect
+							anything in your local repository, safe way to update your working directory\
+`git fetch origin`	&emsp;	Download all but no merge.
+
+`git diff origin/main`			&emsp;	See diferences after fetch\
+`git diff main origin/main`	 	&emsp;	See diferences after fetch\
+`git diff rama1 origin/rama1` 	&emsp;	See diferences between branches
+
+If everything is OK we can rebase\
+`git rebase origin` 	&emsp;	I am happy with changes and save it local\
+`git pull` 				&emsp;	I am happy with changes and save it local
+
+If we do `git rebase origin` or  `git pull` and  web server has changed we may need fix Fetch Conflic\
+
+
+`git fetch upstream`	&emsp;		Fetch changes from upstream:\
+Fetch changes from both origin and upstream in the same shot:\
+`git fetch --multiple origin upstream`
+
+#### Upstream
+//todo
+`git remote add upstream <repo-original>`\
+`git remote -v`\
+`git fetch upstream`\
+`git pull upstream main`
 
 
 #### Fetch Conflict
@@ -24,5 +51,8 @@ Save all the commits from the branch in the form of a new commit\
 Merge use two algoritm: 1 fast-forward 2 Three-way merging
 
 `git merge origin/master`		&emsp;	Merge the origin/master to our local master branch.
+
+
+`git merge --abort` //ABORT A MERGE
 
 
